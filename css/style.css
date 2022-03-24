@@ -132,7 +132,7 @@ h2 {
     text-align: center;
     padding-top: 12vh;
     font-size: 3em;
-    color: #1abc9c
+    color: #1abc9c;
 }
 
 /*paramètre section 1*/
@@ -140,16 +140,8 @@ h2 {
     background-color: rgb(14, 39, 71);
     display: flex;
     flex-direction: column;
-    
-
 }
 #portfolio>div:nth-of-type(1) {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
-#portfolio>div:nth-of-type(1)>div {
     width: 50%;
     height: 30vh;
     padding-top: 10vh;
@@ -157,23 +149,82 @@ h2 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    
-}
-#portfolio>div:nth-of-type(1)>div>a>img {
-    height: 40vh;
-    max-width: auto;
 }
 
-#portfolio>p {
-    text-align: center;
-    
+/*Paramètre image cv*/
+
+#portfolio>div>a>img {
+    height: 40vh;
+    max-width: auto;
+    margin-left: 50vw;
 }
+
+/*Paramètre texte cv*/
+#portfolio>div>p{
+    color: aliceblue;
+    font-size: 2em;
+    text-align: center;
+    margin-left: 50vw;
+    width: 100%;
+    padding-top: 2vh;
+}
+
 /*paramètre section 2/dev*/
 
 #dev {
     background-color: rgb(14, 39, 71);
+    
 }
 
+/*paramètre div dev */
+#dev>div:nth-of-type(1){
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5vh;
+    margin-left: 15vw;
+    width: 70vw;
+    height: 70vh;
+    padding: 1%;
+    margin-top: 5vh;
+}
+
+#dev>div:nth-of-type(1)>div:nth-of-type(1){
+    background-color: rgb(14, 39, 71);
+    height: 60vh;
+    border-radius: 5vh;
+    padding-top: 5vh;
+}
+
+#dev>div:nth-of-type(1)>div:nth-of-type(2){
+    background-color: #1abc9c;
+    height: 10vh;
+    border-radius: 5vh;
+    margin-top: 2vh;
+    padding-top: 3vh;
+    
+}
+/*Paramètre texte dev*/
+
+#dev>div:nth-of-type(1)>div:nth-of-type(1)>p{
+    color: #1abc9c;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5vh;
+}
+
+#dev>div:nth-of-type(1)>div:nth-of-type(1)>h3{
+    color: #1abc9c;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+#dev>div:nth-of-type(1)>div:nth-of-type(2)>p{
+    color: rgb(14, 39, 71);
+    text-align: center;
+    font-size: 2rem;
+}
 /*paramètre section 3/prod audio*/
 
 #prodaudio {
