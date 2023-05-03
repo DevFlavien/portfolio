@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,12 @@
     <title>Portfolio GOUDET Flavien</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+
+    <!---Ajout font roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -21,6 +27,7 @@
             <a href="#dev">Dev web</a>
             <a href="#prodaudio">Prod Audio</a>
             <a href="#design">Infographie</a>
+            <a href="#footer">contact</a>
             <div class="animation start-home"></div>
         </nav>
 
@@ -32,112 +39,144 @@
         <section id="portfolio">
             <h2>PORTFOLIO</h2>
             <div>
-                
-                    <a href="sources/CV-GOUDET_Flavien.pdf" target="blank"> <img src="sources/cv.png" alt="cv"></a>
-                    <p>
-                        Mon CV vous intéresse ? <br>
-                        Alors cliquez sur l'image !</p>
-                
+
+                <a href="sources/CV-GOUDET-FLAVIEN.pdf" target="blank"> <img src="sources/cv.png" alt="cv"></a>
+                <p>
+                    Mon CV vous intéresse ? <br>
+                    Alors cliquez sur l'image !</p>
+
             </div>
         </section>
         <!--Section site internet-->
         <section id="dev">
-            <h2>Partie dev</h2>
-            <div>
-                <div>
-                    <h3>Mes différents projets</h3>
-            <p> Durant ma formation j'ai crée différents sites internet, comme par exemple un site à faire en groupe <br>
-              avec une contrainte de temps qui était de le réaliser en seulement une semaine. L'équipe était <br>
-               composée de deux rédacteurs, deux graphistes et deux développeurs,je faisait partit de l'équipe développeur. <br>
-               Ce site est disponible <a href="https://devflavien.github.io/Site-PPP/"> ici </a> <br> <br>
-               Également durant ma formation nous avons du crée seul un site promotionnel<br>  pour le film "Dune"
-               avec une maquette et des fonctionnalitées à reproduire. Ce site se trouve <a href="https://devflavien.github.io/site-dunes/">ici</a>.
-            </p>
-            </div>
-                <div>
-                <p>Pour retrouver le code source de mes sites mais également de ce portfolio j'ai un github disponible juste <a href="">ici</a> !  </p>    
+            <h2>DÉVELOPPEMENT WEB</h2>
+            <div class="projets_github">
+                <div class="projet_scolaire">
+                    <h3>PROJETS <br> SCOLAIRE</h3>
+                    <p> Création d'un site sur la présentation du E-learning. 1 semaine de travail, le groupe étant
+                        composé de 2 rédacteurs, 2 designeur et de 2 développeur dont moi. <br>
+                        Le site est accessible <a href="https://devflavien.github.io/Site-PPP/" target="_blank"> ici
+                        </a>. <br> <br>
+                        Site promotionnel du film Dune, crée seul avec une maquette imposée durant un semestre. <br>
+                        Le site se trouve <a href="https://devflavien.github.io/site-dunes/"
+                            target="_blank">ici</a>.<br> <br>
+                        Création d'un jeux de carte type "MEMORY", sur android studio en XML et Java (visuel des cartes
+                        dans la section <a href="#design">Infographie</a>
+                        )
+                    </p>
+                </div>
+
+                <div class="projet_pro">
+                    <h3>PROJETS PROFESSIONNEL</h3>
+                    <p>Ces différents projets ont été crée durant mon alternance chez IQar, éditeur de logiciel de
+                        gestion de projet et de portefeuille<br><br>
+                        Modification apporté via WIX (html/velo) durant l'année sur <a href="https://www.smp2.org"
+                            target="_blank">smp2.org</a>,
+                        <a href="https://www.suitepro-g.com" target="_blank">suiteprog.com</a> et <a
+                            href="https://www.iqar.fr" target="_blank">iqar.fr</a> <br> <br>
+                        Conception de la partie front (html/less/js) de la page de <a
+                            href="https://login.suiteprog.com/Identity/Account/Login"
+                            target="_blank">connexion/inscription</a> du logiciel SuiteProG <br><br>
+                        Création d'un ChatBot via l'outil Power Virtual Agent de microsoft, et partie front réalisé en
+                        css/js, disponible sur <a href="https://www.suitepro-g.com" target="_blank">suiteprog.com</a>
+                    </p>
+                </div>
+                <div class="github">
+                    <p>Pour retrouver le code source de mes sites mais également de ce portfolio j'ai un github
+                        disponible juste <a href="https://github.com/DevFlavien/">ici</a> ! </p>
                 </div>
             </div>
         </section>
         <!--Section montage vidéo-->
         <section id="prodaudio">
-            <h2>Partie audiovisuel</h2>
-            <div>
+            <h2>Création audiovisuel</h2>
 
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/rj71jMjNbLo"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="video-slider">
+                <button class="slider-btn prev-btn"> &lt </button>
 
-                <p>Reportage crée en groupe dans le cadre de la formation du DUT MMI.</br>
-                    Mon rôle dans l'équipe à été la participation à l'écriture mais aussi la réalisation. </br>
-                    J'ai monter seul le reportage sur Adobe Première Pro et After Effect.</p>
+                <div class="video_description">
+                    <iframe src="https://www.youtube.com/embed/rj71jMjNbLo" frameborder="0" allowfullscreen></iframe>
+                    <div class="description">
+                        <p>Reportage réalisé dans le cadre d'un cours de théorie de l'information au cours de ma
+                            formation au DUT MMI.
+                            J'ai travaillé sur l'écriture, le tournage et surtout sur le montage à l'aide des logiciel
+                            After Effect et Première Pro</p>
+                    </div>
+                </div>
+                <div class="video_description">
+
+                    <iframe src="https://www.youtube.com/embed/a3yIqtoEkpA" frameborder="0" allowfullscreen></iframe>
+                    <div class="description">
+                        <p>Publicité pour une marque de céréale, réalisé dans le cadre d'un cours de production
+                            audiovisuel au cours de ma formation au DUT MMI.
+                            J'ai travaillé sur l'écriture, le tournage et surtout seul sur le montage à l'aide des
+                            logiciel After Effect et Première Pro</p>
+                    </div>
+                </div>
+                <div class="video_description">
+                    <iframe src="https://www.youtube.com/embed/VYA6WGHUpdg" frameborder="0" allowfullscreen></iframe>
+                    <div class="description">
+                        <p>Clip musical du chanteur "R1Luv" réalisé par le label associatif "DEATHLESS RECORD" dont je
+                            fait parti.
+                            J'ai participé au tournage mais j'ai surtout travaillé seul sur le montage à l'aide des
+                            logiciel After Effect et Première Pro</p>
+                    </div>
+                </div>
+                <div class="video_description">
+                    <iframe src="https://www.youtube.com/embed/eBEaPTNYCQY" frameborder="0" allowfullscreen></iframe>
+                    <div class="description">
+                        <p>Clip musical du chanteur "R1Luv" réalisé par le label associatif "DEATHLESS RECORD" dont je
+                            fait parti.
+                            J'ai participé au tournage mais j'ai surtout travaillé seul sur le montage à l'aide des
+                            logiciel After Effect et Première Pro</p>
+                    </div>
+                </div>
+                <div class="video_description">
+                    <iframe src="https://www.youtube.com/embed/lCofrhjIumY" frameborder="0" allowfullscreen></iframe>
+                    <div class="description">
+                        <p>Reportage réalisé dans le cadre d'un cours de théorie de l'information au cours de ma
+                            formation au DUT MMI.
+                            J'ai travaillé sur l'écriture, le tournage et surtout sur le montage à l'aide des logiciel
+                            After Effect et Première Pro</p>
+                    </div>
+                </div>
+
+                <!-- <div class="slider-nav"> -->
+
+                <button class="slider-btn next-btn"> > </button>
+                <!-- </div> -->
 
             </div>
-            <div>
-                <p>Publicité crée en groupe dans le cadre de la formation du DUT MMI.</br>
-                    Mon rôle dans l'équipe à été le montage vidéo du reportage.</p>
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/a3yIqtoEkpA"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <div>
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/VYA6WGHUpdg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p>Monteur pour le clip du rappeur dijonnais R1Luv du label DEATHLESS RECORD</p>
-            </div>
-            <div>
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/eBEaPTNYCQY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p>Animation crée en équipe de deux lors de ma formation MMI</p>
-            </div>
-            <div><iframe width="640" height="360" src="https://www.youtube.com/embed/lCofrhjIumY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <p>Montage vidéo, une AMV plus précisément <br>
-                    sur l'animé "L'attaque des titans" crée durant mon temps libre.</p>
-            </div>
+
 
         </section>
         <section id="design">
             <h2>INFOGRAPHIE</h2>
-            <div>
-                <img src="sources/couv-roman.jpg" alt="couv">
-                <p>Création d'une couverture du roman "The Institute" </br>
-                    dans le cadre de ma formation MMI</p>
-            </div>
-            <div>
-                <img src="sources/billet-foot.jpg" alt="billet">
-                <p>Création d'un billet de football pour un match "OL/PSG" </br>
-                    fait durant mon temps libre</p>
-            </div>
-            <div>
-                <img src="sources/ecran-naruto.jpg" alt="ecran-naruto">
-                <p>Création d'un fond d'écran format Iphone X </br>
-                    sur le thème du manga "Naruto" réalisé durant mon temps libre</p>
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
+            <div class="slider_button">
+                <div id="precedent" onclick="ChangeSlide(-1)">&lt</div>
+                <div class="flex">
+                    <div id="slider">
+                        <img src="./sources/couv-roman.jpg" alt="roman" id="slide">
+                    </div>
+                    <div id="description_img">
+                        <p id="description">Couverture de roman réalisé sur Photoshop dans le cadre d'un cours de ma
+                            formation MMI </p>
+                    </div>
+                </div>
+                <div id="suivant" onclick="ChangeSlide(1)">></div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <a href="https://www.linkedin.com/in/flavien-goudet-392217229" target="blank">
-            <img src="sources/logo-linkedin.png" alt="linkedin">
-        </a>
+    <footer id="footer">
+        <h2>Me contacter</h2>
+        <div>
+            <a href="https://www.linkedin.com/in/flavien-goudet-392217229" target="blank">
+                <img src="sources/logo-linkedin.png" alt="linkedin">
+            </a>
+            <a href="mailto:goudet.flavien@gmail.com"><img src="sources/email.png" alt="mail"></a>
+        </div>
+
     </footer>
 </body>
 
