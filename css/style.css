@@ -340,7 +340,7 @@ h2 {
 
 }
 
-iframe {
+.iframe {
     border-radius: 5vh 5vh 0vh 0vh;
     width: 45vw;
     height: 70%;
